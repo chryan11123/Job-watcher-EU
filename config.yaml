@@ -1,23 +1,188 @@
 
-keywords:
-  - marketing
-  - growth
-  - brand
-  - strategy
-  - strategic project
-  - business development
-  - category management
-  - graduate program
+# EUROPE JOB WATCHER
+# Marketing / Growth / Brand / Strategy
 
+keywords:
+  # Marketing & Brand
+  - marketing
+  - digital marketing
+  - marketing specialist
+  - marketing coordinator
+  - marketing executive
+  - marketing associate
+  - brand
+  - brand management
+  - brand analyst
+  - assistant brand manager
+  - junior brand manager
+  - product marketing
+  - category management
+  - trade marketing
+  - shopper marketing
+  - campaign management
+  - integrated marketing
+  - go-to-market
+
+  # Growth & Performance
+  - growth
+  - growth marketing
+  - growth analyst
+  - user acquisition
+  - performance marketing
+  - acquisition marketing
+  - lifecycle marketing
+  - CRM
+  - retention
+  - marketing automation
+  - conversion optimization
+  - demand generation
+
+  # Social Media & Content
+  - social media
+  - social media specialist
+  - community management
+  - content
+  - content marketing
+  - content strategist
+  - content creator
+  - digital content
+  - creative strategy
+  - influencer marketing
+  - creator partnerships
+  - communications
+  - digital communications
+  - PR
+  - public relations
+
+  # Consumer Insights & Analytics
+  - consumer insights
+  - consumer research
+  - market research
+  - market intelligence
+  - customer insights
+  - customer experience
+  - consumer analytics
+  - marketing analytics
+  - brand analytics
+  - marketing intelligence
+  - commercial analytics
+  - business insights
+  - insights analyst
+  - market analyst
+  - category analyst
+
+  # Strategy & Strategic Projects
+  - strategy
+  - strategic planning
+  - strategic project
+  - strategic project management
+  - strategic project manager
+  - strategy analyst
+  - business strategy
+  - commercial strategy
+  - growth strategy
+  - business operations
+  - strategic operations
+  - business transformation
+  - transformation analyst
+  - project management
+  - project coordinator
+  - project analyst
+  - program management
+  - business analyst
+  - management consulting
+  - consulting analyst
+  - innovation strategy
+
+  # Business Development & Commercial
+  - business development
+  - business development representative
+  - sales development representative
+  - commercial development
+  - partnerships
+  - partnership specialist
+  - account management
+  - customer success
+  - revenue operations
+  - sales operations
+  - commercial excellence
+  - e-commerce
+  - ecommerce specialist
+
+  # Early career
+  - graduate program
+  - graduate programme
+  - graduate trainee
+  - management trainee
+  - junior
+  - entry level
+  - entry-level
+  - early career
+
+# Four target countries
 locations:
-  - brussels
+  # Belgium
   - belgium
+  - belgique
+  - belgie
+  - brussels
+  - bruxelles
+  - antwerp
+  - antwerpen
+  - ghent
+  - gent
+  - leuven
+  - mechelen
+
+  # France
+  - france
+  - paris
+  - lille
+  - lyon
+  - bordeaux
+  - nantes
+  - toulouse
+
+  # Netherlands
+  - netherlands
+  - nederland
+  - amsterdam
+  - rotterdam
+  - utrecht
+  - eindhoven
+  - the hague
+  - den haag
+
+  # Germany
+  - germany
+  - deutschland
+  - berlin
+  - munich
+  - munchen
+  - hamburg
+  - frankfurt
+  - cologne
+  - koln
+  - dusseldorf
+
+  # Remote
   - remote
+  - europe
+  - european union
 
 max_experience_years: 3
 max_days_old: 7
 
-exclude_keywords: []
+# Initial exclusion rules
+exclude_keywords:
+  - unpaid internship
+  - working student
+  - werkstudent
+  - alternance
+  - apprentissage
+  - apprenticeship
+  - phd position
+  - postdoctoral
 
 indeed_rss: []
 
@@ -25,7 +190,7 @@ sources:
   linkedin: true
   indeed: true
   jobspy: true
-  companies: true
+  companies: false
   remoteok: false
   razorpay: false
   wellfound: false
@@ -37,21 +202,26 @@ sources:
   triplebyte: false
   sharedlists: false
 
+# JobSpy: initial Belgium search
 jobspy:
   sites:
     - linkedin
     - indeed
     - google
     - glassdoor
-  search_term: "marketing OR growth OR brand OR strategy"
-  google_search_term: "junior marketing strategy jobs Brussels Belgium"
+  search_term: "marketing"
+  google_search_term: "junior marketing English speaking jobs Belgium"
   location: "Brussels"
+  distance: 50
   country_indeed: "Belgium"
-  results_wanted: 30
+  results_wanted: 50
   hours_old: 168
+  linkedin_fetch_description: true
+  is_remote: false
   python: "python3"
 
 ai:
   enabled: false
   provider: "gemini"
+  model: "gemini-2.0-flash"
   threshold: 70
