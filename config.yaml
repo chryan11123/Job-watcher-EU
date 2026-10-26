@@ -175,14 +175,6 @@ max_days_old: 7
 
 # Initial exclusion rules
 exclude_keywords: []
-  - unpaid internship
-  - working student
-  - werkstudent
-  - alternance
-  - apprentissage
-  - apprenticeship
-  - phd position
-  - postdoctoral
 
 indeed_rss: []
 
