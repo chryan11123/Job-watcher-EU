@@ -174,7 +174,7 @@ max_experience_years: 3
 max_days_old: 7
 
 # Initial exclusion rules
-exclude_keywords:
+exclude_keywords: []
   - unpaid internship
   - working student
   - werkstudent
