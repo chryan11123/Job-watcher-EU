@@ -232,7 +232,7 @@ func main() {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			if jobSpyJobs, err := fetchJobSpyJobsForSites(cfg, jobSpySites); err == nil {
+			if jobSpyJobs, err := fetchEuropeJobSpyJobs(cfg, jobSpySites); err == nil {
 				addJobs(fmt.Sprintf("JobSpy (%s)", strings.Join(jobSpySites, ", ")), jobSpyJobs)
 			} else {
 				fmt.Printf("  Warning: JobSpy failed: %v\n", err)
