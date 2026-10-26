@@ -1,172 +1,57 @@
-# Keywords matching your resume skills
+
 keywords:
-  # Languages
-  - python
-  - javascript
-  - typescript
-  - c++
-  - cpp
-  
-  # Backend & Frameworks
-  - node.js
-  - nodejs
-  - express
-  - fullstack
-  - full stack
-  - full-stack
-  
-  # Generic Titles (Important for catching SDE roles)
-  - software engineer
-  - software developer
-  - SDE
-  - MTS
-  - member of technical staff
-  - developer
-  - programmer
-  - engineering
-  - backend
-  - backend developer
-  - backend engineer
-  - frontend
-  - frontend developer
-  - frontend engineer
-  - fullstack
-  - junior
-  - junior developer
-  - junior engineer
-  - junior software engineer
-  - junior software developer
-  - junior fullstack
-  - junior full stack
-  - junior full-stack 
-  - full stack
-  - full-stack
-  
-  # Frontend
-  - react
-  - next.js
-  - nextjs
-  - frontend
-  - front end
-  
-  # Your project tech
-  - websocket
-  - webrtc
-  - redis
-  - postgresql
-  - postgres
-  - prisma
-  - docker
-  
-  # Roles
-  - software engineer
-  - software developer
-  - sde
-  - web developer
-  - mern
-  - full stack developer
-  
-  # Bonus - learning/interested
-  - golang
-  - go developer
-  - blockchain
-  - web3
-  - distributed systems
+  - marketing
+  - growth
+  - brand
+  - strategy
+  - strategic project
+  - business development
+  - category management
+  - graduate program
 
-# Location filter - India or Remote
 locations:
-  - india
-  - bangalore
-  - bengaluru
-  - mumbai
-  - delhi
-  - hyderabad
-  - pune
-  - gurgaon
-  - gurugram
-  - noida
-  - chennai
-  - kolkata
-  - allahabad
-  - prayagraj
+  - brussels
+  - belgium
   - remote
-  - work from home
-  - wfh
-  - anywhere
 
-# Max experience - you have ~1 year contract experience
-max_experience_years: 2
+max_experience_years: 3
+max_days_old: 7
 
-# Date Filtering
-max_days_old: 5                 # Ignore jobs older than this (if date available)
+exclude_keywords: []
 
-# Exclude senior roles
-exclude_keywords:
-  - senior
-  - sr.
-  - sr 
-  - lead
-  - principal
-  - staff
-  - manager
-  - director
-  - architect
-  - head of
-  - vp
-  - 5+ years
-  - 4+ years
-  - 3+ years
-  - 5 years
-  - 4 years
-  - 3 years
-
-indeed_rss:
-  - "https://www.indeed.com/jobs?q=software+engineer+fresher&l=India"
-  - "https://www.indeed.com/jobs?q=react+developer&l=India"
-  - "https://www.indeed.com/jobs?q=node.js+developer&l=India"
-  - "https://www.indeed.com/jobs?q=full+stack+developer+entry+level&l=India"
+indeed_rss: []
 
 sources:
-  remoteok: false   # requires premium
-  razorpay: true
-  wellfound: false  # requires JavaScript
-  indeed: true
   linkedin: true
-  naukri: false     # requires JavaScript
-  jobspy: true      # Python-based multi-board scraper (JobSpy)
-  instahyre: true   # India-focused, API-based
-  companies: true   # 90+ major tech company career pages
-  ycjobs: true      # YCombinator startup jobs (workatastartup.com)
-  hnjobs: true      # Hacker News "Who's Hiring" threads
-  reddit: true      # r/cscareerquestions, r/forhire
-  triplebyte: false # Triplebyte/Karat - limited public access, often fails
-  sharedlists: true # Google Sheets & GitHub Hiring Tables
+  indeed: true
+  jobspy: true
+  companies: true
+  remoteok: false
+  razorpay: false
+  wellfound: false
+  naukri: false
+  instahyre: false
+  ycjobs: false
+  hnjobs: false
+  reddit: false
+  triplebyte: false
+  sharedlists: false
 
-# JobSpy (Python) - Multi-board scraping
 jobspy:
   sites:
-    - indeed
     - linkedin
+    - indeed
     - google
-    - naukri
     - glassdoor
-    - bayt
-    - bdjobs
-    - zip_recruiter
-  search_term: "software engineer OR backend developer OR full stack developer"
-  google_search_term: "software engineer jobs in India since yesterday"
-  location: "India"
-  distance: 50
-  country_indeed: "India"
-  results_wanted: 25
-  hours_old: 120
-  linkedin_fetch_description: false
-  is_remote: false
+  search_term: "marketing OR growth OR brand OR strategy"
+  google_search_term: "junior marketing strategy jobs Brussels Belgium"
+  location: "Brussels"
+  country_indeed: "Belgium"
+  results_wanted: 30
+  hours_old: 168
   python: "python3"
 
-# AI Resume Matching (Optional)
 ai:
   enabled: false
-  provider: "ollama"  # Options: "ollama", "gemini"
-  model: "llama3.1:latest"  # For Ollama: "llama3", for Gemini: "gemini-2.0-flash"
-  threshold: 70       # Only notify if score >= 70
+  provider: "gemini"
+  threshold: 70
